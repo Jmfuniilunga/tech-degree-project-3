@@ -10,64 +10,148 @@
 </head>
   <body>
     <header class="top-box">
-      <h2>The code Review</h2>
+      <div class="wrapper-1">
+       <h2>The code Review</h2>
+      </div>
     </header>
-<div class="container">
-    <div class="title-box">
-      <h2>Signup for our newsletter</h2>
-      <p>Get the latest news on how your code is doing right in your inbox</p>
-    </div>
+<div class="wrapper">
+        <div class="title-box">
+          <h2>Signup for our newsletter</h2>
+          <p>Get the latest news on how your code is doing right in your inbox</p>
+        </div>
 
-    <form>
-      <div class="row">
-        <div class="column-1">
-          <label for="full_name">Full Name</label>
+
+        <form>
+          <div class="title-box-2">
+            <h2>Signup for our newsletter</h2>
+            <p>Get the latest news on how your code is doing right in your inbox</p>
+          </div>
+          <fieldset>
+
+
+            <legend>Contact Information</legend>
+
+                  <div class="row">
+                    <div class="column-1">
+                      <label for="full_name">Full Name</label>
+                    </div>
+                    <div class="column-2">
+                      <input type="text" id="full_name" name="full_name" placeholder="Required">
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="column-1">
+                      <label for="email">Email Address</label>
+                    </div>
+                    <div class="column-2">
+                      <input type="email" id="email" name="user_email" placeholder="Required">
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="column-1">
+                      <label for="phone">Phone number</label>
+                    </div>
+                    <div class="column-2">
+                      <input type="tel" id="phone" name="phone"
+                     pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                     required>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="column-1">
+                      <label for="street_address">Street Address</label>
+                    </div>
+                    <div class="column-2">
+                      <input type="text" id="street_address" name="street_address" placeholder="">
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="column-1">
+                      <label for="city">City</label>
+                    </div>
+                    <div class="column-2">
+                      <input type="text" id="city" name="city" placeholder="">
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="column-1">
+                      <label for="state">State</label>
+                    </div>
+                    <div class="column-2">
+                      <select class="the-select" id="state" name="select">
+                        <option value="">Choose State</option>
+                        <option value="washington">Washington DC</option>
+                        <option value="california">California</option>
+                        <option value="michigan">Michigan</option>
+                        <option value="chicago">Chicago</option>
+
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="column-1">
+                      <label for="zip_code">Zip Code</label>
+                    </div>
+                    <div class="column-2">
+                      <input type="text" id="zip_code" name="zip_code" placeholder="">
+                    </div>
+                  </div>
+              </fieldset>
+              <fieldset class="newsletter">
+                <legend>Newsletter</legend>
+                  <p class="newsletter_p">
+                    Select the newsletters you would like to receive.
+                  </p>
+                  <div>
+                      <input type="checkbox" id="html" name="check"
+                             checked>
+                      <label for="scales">Html</label>
+                    </div>
+
+                    <div>
+                      <input type="checkbox" id="css" name="check">
+                      <label for="horns">Horns</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="js" name="check">
+                  <label for="horns">Javascript News</label>
+            </div>
+            <p class="newsletter_p">
+              Newsletter format
+            </p>
+            <div>
+              <input type="radio" id="htmls" name="htmls" value="htmls"
+                     >
+              <label for="htmls">HTML</label>
+          </div>
+
+          <div>
+            <input type="radio" id="plain_text" name="htmls" value="plain_text"
+                   >
+            <label for="plain_text">Plain text</label>
         </div>
-        <div class="column-2">
-          <input type="text" id="full_name" name="full_name" placeholder="Required">
-        </div>
+
+
+        <p class="newsletter_p">
+          Other topics you would like to hear about
+        </p>
+        <div>
+          <textarea id="comment" name="comment"
+                    rows="5" cols="33">
+          Write something...
+          </textarea>
       </div>
-
-      <div class="row">
-        <div class="column-1">
-          <label for="email">Email Address</label>
-        </div>
-        <div class="column-2">
-          <input type="password" id="password" name="user_password" placeholder="Required">
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="column-1">
-          <label for="phone">Phone number</label>
-        </div>
-        <div class="column-2">
-          <input type="tel" id="phone" name="phone"
-         pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-         required>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="column-1">
-          <label for="street_address">Street Address</label>
-        </div>
-        <div class="column-2">
-          <input type="text" id="street_address" name="street_address" placeholder="">
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="column-1">
-          <label for="city">City</label>
-        </div>
-        <div class="column-2">
-          <input type="text" id="city" name="city" placeholder="">
-        </div>
-      </div>
-    </form>
-
+      <button action ="index.html" method="post" type="submit" name="button">Sign UP</button>
+              </fieldset>
+        </form>
 </div>
+
 
   </body>
   </html>

@@ -17,19 +17,278 @@ border-bottom: thick double #003366;
 margin-bottom: 40px;
 }
 .title-box h2{
-color: #001a33;
-font-size: 29px;
-margin-bottom: 20px;
-padding-top: 30px;
+color: #f2f2f2;
+font-size: 23px;
+margin-bottom: 15px;
+padding-top: 25px;
 }
 .title-box p{
-color: #0073e6;
-font-size: 22px;
+color: #f2f2f2;
+font-size: 20px;
 padding-bottom: 30px;
-padding-left: 40px;
-padding-right: 40px;
+padding-left: 60px;
+padding-right: 60px;
 }
-.container{
+.title-box-2{
+  display: none;
+}
+form{
   margin: 0 auto;
   width: 92%;
+}
+input[type=text]{
+padding: 12px;
+}
+input[type=email]{
+padding: 12px;
+}
+input[type=tel]{
+padding: 12px;
+}
+input{
+  width: 100%;
+  padding: 12px;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+}
+select, textarea {
+  border: 1px solid #ccc;
+  width: 100%;
+  padding: 12px;
+
+}
+label{
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+::placeholder {
+  color: blue;
+  font-size: 0.8em;
+  text-align: right;
+}
+input:focus {
+  background: #f2f2f2;
+  color: red;
+}
+select:focus {
+  background: #f2f2f2;
+  color: red;
+}
+.title-box {
+ text-align: center;
+ color: #808080;
+ margin-top: 0px;
+ background: url('../img/contact2.jpg') no-repeat top center;
+ background-size: cover;
+ background-position: 25% 75%;
+ overflow: hidden;
+ min-height: 300px;
+ border-bottom: 10px solid #001a33;
+
+}
+legend {
+    background-color: #001a33;
+    color: #fff;
+    padding: 6px 8px;
+    font-size: 21px;
+
+}
+fieldset{
+  border: 1px solid #ccc;
+  border-radius: 2px;
+
+}
+.newsletter{
+  margin-top: 40px;
+}
+input[type = checkbox] {
+    margin: .4rem;
+    padding: 0px;
+}
+input[type = radio] {
+    margin: .4rem;
+    padding: 0px;
+    width: auto;
+
+}
+input[type = checkbox] {
+    margin: .4rem;
+    padding: 0px;
+    width: auto;
+
+}
+.newsletter_p{
+  font-size: 19px;
+  padding: 20px 20px 20px 0;
+}
+textarea {
+    font-size: .8rem;
+    letter-spacing: 1px;
+}
+textarea {
+    padding: 10px 0px 0px 0px;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #555555;
+  width: 100%;
+}
+/*Style for medium screen*/
+
+@media screen and (min-width: 768px) {
+.row{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.column-1{
+  flex-basis: 15%;
+}
+.column-2{
+  flex-basis: 85%;
+}
+form{
+  width: 97%;
+}
+legend{
+  margin-bottom: 20px;
+}
+.title-box {
+ text-align: center;
+ color: #808080;
+ margin-top: 0px;
+ background: url('../img/contact2.jpg') no-repeat top center;
+ background-size: cover;
+ background-position: 25% 75%;
+ overflow: hidden;
+ min-height: 300px;
+ border-bottom: 10px solid #001a33;
+
+}
+}
+@media screen and (min-width: 1024px) {
+
+  .column-1{
+    flex-basis: 18%;
+  }
+  .column-2{
+    flex-basis: 82%;
+  }
+  form{
+    width: 70%;
+  }
+  @media screen and (min-width: 1440px) {
+
+    ::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.wrapper{
+
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: 800px;
+  height: calc(100vh - 150px);
+  margin: auto;
+border:2px solid #001a33;
+border-radius: 6px;
+
+  }
+  .column-1{
+    flex-basis: 30%;
+  }
+  .column-2{
+    flex-basis: 70%;
+  }
+  .wrapper-1{
+    width: 80%;
+    margin: 0 auto;
+
+      text-align: left;
+  }
+  .top-box{
+
+    margin-bottom: 50px;
+
+padding: 15px 0 15px 0;
+  }
+  .top-box h2{
+font-size: 18px;
+
+  }
+  .title-box{
+    flex-basis: 70%;
+
+
+
+  }
+  .title-box {
+   text-align: center;
+   color: #808080;
+   margin-top: 0px;
+   background: url('../img/contact2.jpg') no-repeat top center;
+   background-size: cover;
+   height: 100%;
+
+   overflow: hidden;
+
+   border-bottom: 10px solid #001a33;
+
+  }
+  form{
+    flex-basis: 30%;
+    padding: 0 20px 0 20px;
+    height: 790px;
+    background-color: #f2f2f2;
+  height: calc(100vh - 160px);
+    overflow: auto;
+  }
+  .title-box-2{
+    display: block;
+    border-bottom: thick double #003366;
+    margin-bottom: 30px;
+  }
+  .title-box-2 h2{
+    font-size: 30px;
+    padding: 20px 0 20px 0;
+  }
+  .title-box-2 p{
+    padding-bottom: 30px;
+  }
+  .title-box h2{
+    display: none;
+  }
+  .title-box p{
+    display: none;
+  }
+
 }
