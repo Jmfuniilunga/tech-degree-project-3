@@ -3,18 +3,18 @@
   margin: 0;
   padding: 0;
 }
-.top-box, .title-box{
-  text-align: center;
-}
+
 .top-box{
 background-color: #001a33;
 color: white;
 padding: 25px 0 25px 0;
 text-transform: uppercase;
+text-align: center;
 }
 .title-box{
 border-bottom: thick double #003366;
 margin-bottom: 40px;
+text-align: center;
 }
 .title-box h2{
 color: #f2f2f2;
@@ -30,11 +30,11 @@ padding-left: 60px;
 padding-right: 60px;
 }
 .title-box-2{
-  display: none;
+display: none;
 }
 form{
-  margin: 0 auto;
-  width: 92%;
+margin: 0 auto;
+width: 92%;
 }
 input[type=text]{
 padding: 12px;
@@ -46,249 +46,264 @@ input[type=tel]{
 padding: 12px;
 }
 input{
-  width: 100%;
-  padding: 12px;
-  border-radius: 2px;
-  border: 1px solid #ccc;
+border-radius: 2px;
+border: 1px solid #ccc;
+padding: 12px;
+width: 100%;
 }
 select, textarea {
-  border: 1px solid #ccc;
-  width: 100%;
-  padding: 12px;
-
+border: 1px solid #ccc;
+padding: 12px;
+width: 100%;
 }
 label{
-  padding: 12px 12px 12px 0;
-  display: inline-block;
+cursor: pointer;
+display: inline-block;
+padding: 12px 12px 12px 0;
 }
 ::placeholder {
-  color: blue;
-  font-size: 0.8em;
-  text-align: right;
+color: #b3b3ff;
+font-size: 0.8em;
+text-align: right;
 }
 input:focus {
-  background: #f2f2f2;
-  color: red;
+background: #bfbfbf;
+color: inherit;
+transition-duration: 5s;
+}
+textarea:focus{
+background: #bfbfbf;
+color: inherit;
+transition-duration: 5s;
 }
 select:focus {
-  background: #f2f2f2;
-  color: red;
+background: #f2f2f2;
+color: inherit;
 }
 .title-box {
- text-align: center;
- color: #808080;
- margin-top: 0px;
- background: url('../img/contact2.jpg') no-repeat top center;
- background-size: cover;
- background-position: 25% 75%;
- overflow: hidden;
- min-height: 300px;
- border-bottom: 10px solid #001a33;
-
+background: url('../img/contact2.jpg') no-repeat top center;
+background-size: cover;
+background-position: 25% 75%;
+border-bottom: 10px solid #001a33;
+color: #808080;
+overflow: hidden;
+min-height: 300px;
+margin-top: 0px;
+text-align: center;
 }
 legend {
-    background-color: #001a33;
-    color: #fff;
-    padding: 6px 8px;
-    font-size: 21px;
-
+background-color: #001a33;
+color: #fff;
+font-size: 21px;
+padding: 6px 8px;
 }
 fieldset{
-  border: 1px solid #ccc;
-  border-radius: 2px;
-
+border: 1px solid #ccc;
+border-radius: 2px;
 }
 .newsletter{
-  margin-top: 40px;
+margin-top: 40px;
 }
 input[type = checkbox] {
-    margin: .4rem;
-    padding: 0px;
+padding: 0;
+margin: .4rem;
 }
 input[type = radio] {
-    margin: .4rem;
-    padding: 0px;
-    width: auto;
-
+padding: 0px;
+margin: .4rem;
+width: auto;
 }
 input[type = checkbox] {
-    margin: .4rem;
-    padding: 0px;
-    width: auto;
-
+margin: .4rem;
+padding: 0px;
+width: auto;
 }
 .newsletter_p{
-  font-size: 19px;
-  padding: 20px 20px 20px 0;
+font-size: 19px;
+padding: 20px 20px 20px 0;
 }
 textarea {
-    font-size: .8rem;
-    letter-spacing: 1px;
-}
-textarea {
-    padding: 10px 0px 0px 0px;
-    line-height: 1.5;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    box-shadow: 1px 1px 1px #999;
+border-radius: 5px;
+border: 1px solid #ccc;
+box-shadow: 1px 1px 1px #999;
+font-size: .8rem;
+padding: 10px 0px 0px 0px;
+letter-spacing: 1px;
+line-height: 1.5;
 }
 button {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  margin: 4px 2px;
-  cursor: pointer;
-  background-color: #555555;
-  width: 100%;
+background-color: #4CAF50; /* Green */
+background-color: #555555;
+border: none;
+color: white;
+cursor: pointer;
+display: inline-block;
+font-size: 20px;
+padding: 15px 32px;
+margin: 4px 2px;
+text-align: center;
+text-decoration: none;
+width: 100%;
 }
 /*Style for medium screen*/
 
 @media screen and (min-width: 768px) {
+  .title-box {
+align-items: center;
+background: url('../img/contact2.jpg') no-repeat top center;
+background-size: cover;
+border-bottom: 10px solid #001a33;
+color: #808080;
+display: flex;
+flex-direction:column;
+justify-content: center;
+overflow: hidden;
+margin-top: 0px;
+text-align: center;
+  }
+.title-box h2 {
+border-bottom: thick double #003366;
+font-size: 32px;
+padding-bottom: 10px;
+  }
 .row{
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 20px;
+display: flex;
+flex-direction: row;
+margin-bottom: 20px;
 }
 .column-1{
-  flex-basis: 15%;
+flex-basis: 15%;
 }
 .column-2{
-  flex-basis: 85%;
+flex-basis: 85%;
 }
 form{
-  width: 97%;
+width: 97%;
 }
 legend{
-  margin-bottom: 20px;
+margin-bottom: 20px;
+}
+}
+/*Style for large screen*/
+@media screen and (min-width: 1024px) {
+.column-1{
+flex-basis: 18%;
+}
+.column-2{
+flex-basis: 82%;
+}
+form{
+  width: 70%;
 }
 .title-box {
- text-align: center;
- color: #808080;
- margin-top: 0px;
- background: url('../img/contact2.jpg') no-repeat top center;
- background-size: cover;
- background-position: 25% 75%;
- overflow: hidden;
- min-height: 300px;
- border-bottom: 10px solid #001a33;
-
+align-items: center;
+background: url('../img/contact2.jpg') no-repeat top center;
+background-size: cover;
+background-size: cover;
+color: #808080;
+display: flex;
+flex-direction:column;
+justify-content: center;
+height: 100%;
+overflow: hidden;
+margin-top: 0;
 }
+.title-box h2{
+border-bottom: thick double #003366;
+font-size: 33px;
+padding-bottom: 10px;
+padding: 4px 8px;
+  }
 }
-@media screen and (min-width: 1024px) {
-
-  .column-1{
-    flex-basis: 18%;
-  }
-  .column-2{
-    flex-basis: 82%;
-  }
-  form{
-    width: 70%;
-  }
+/*Style for Extralarge screen*/
   @media screen and (min-width: 1440px) {
-
-    ::-webkit-scrollbar {
-  width: 10px;
+::-webkit-scrollbar {
+width: 10px;
 }
-
 /* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
-
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #888;
 }
-
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-
 .wrapper{
-
-  display: flex;
-  flex-direction: row;
-  width: 80%;
-  height: 800px;
-  height: calc(100vh - 150px);
-  margin: auto;
 border:2px solid #001a33;
 border-radius: 6px;
-
-  }
-  .column-1{
-    flex-basis: 30%;
-  }
-  .column-2{
-    flex-basis: 70%;
-  }
-  .wrapper-1{
-    width: 80%;
-    margin: 0 auto;
-
-      text-align: left;
-  }
-  .top-box{
-
-    margin-bottom: 50px;
-
+display: flex;
+height: 800px;
+height: calc(100vh - 150px);
+flex-direction: row;
+margin: auto;
+width: 80%;
+}
+.column-1{
+flex-basis: 30%;
+}
+.column-2{
+flex-basis: 70%;
+}
+.wrapper-1{
+margin: 0 auto;
+text-align: left;
+width: 80%;
+}
+.top-box{
+margin-bottom: 50px;
 padding: 15px 0 15px 0;
   }
-  .top-box h2{
+.top-box h2{
 font-size: 18px;
-
-  }
-  .title-box{
-    flex-basis: 70%;
-
-
-
-  }
-  .title-box {
-   text-align: center;
-   color: #808080;
-   margin-top: 0px;
-   background: url('../img/contact2.jpg') no-repeat top center;
-   background-size: cover;
-   height: 100%;
-
-   overflow: hidden;
-
-   border-bottom: 10px solid #001a33;
-
-  }
-  form{
-    flex-basis: 30%;
-    padding: 0 20px 0 20px;
-    height: 790px;
-    background-color: #f2f2f2;
-  height: calc(100vh - 160px);
-    overflow: auto;
-  }
-  .title-box-2{
-    display: block;
-    border-bottom: thick double #003366;
-    margin-bottom: 30px;
-  }
-  .title-box-2 h2{
-    font-size: 30px;
-    padding: 20px 0 20px 0;
-  }
-  .title-box-2 p{
-    padding-bottom: 30px;
-  }
-  .title-box h2{
-    display: none;
-  }
-  .title-box p{
-    display: none;
-  }
-
+}
+.title-box{
+flex-basis: 70%;
+}
+.title-box {
+background: url('../img/contact2.jpg') no-repeat top center;
+background-size: cover;
+border-bottom: 10px solid #001a33;
+color: #808080;
+margin-top: 0;
+height: 100%;
+overflow: hidden;
+text-align: center;
+}
+form{
+background-color: #f2f2f2;
+height: calc(100vh - 160px);
+flex-basis: 30%;
+overflow: auto;
+padding: 0 20px 0 20px;
+}
+form:hover{
+background-color:	rgb(230, 230, 230);
+transition: background-color 1s;
+}
+.title-box-2{
+border-bottom: thick double #003366;
+display: block;
+margin-bottom: 30px;
+}
+.title-box-2 h2{
+font-size: 30px;
+padding: 20px 0 20px 0;
+}
+.title-box-2 p{
+padding-bottom: 30px;
+}
+.title-box h2{
+display: none;
+}
+.title-box p{
+display: none;
+}
+button[type="submit"]:hover{
+background-color: #001a33;
+transition: background-color 1s;
+}
 }
