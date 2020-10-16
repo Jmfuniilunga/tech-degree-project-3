@@ -35,6 +35,11 @@ display: none;
 form{
 margin: 0 auto;
 width: 92%;
+padding: 20px;
+}
+form:hover{
+background-color:	rgb(230, 230, 230);
+transition: background-color 1s;
 }
 input[type=text]{
 padding: 12px;
@@ -60,6 +65,12 @@ label{
 cursor: pointer;
 display: inline-block;
 padding: 12px 12px 12px 0;
+}
+input[type=checkbox]:checked +label{
+font-weight: bold;
+}
+input[type=radio]:checked +label{
+font-weight: bold;
 }
 ::placeholder {
 color: #b3b3ff;
@@ -145,6 +156,10 @@ text-align: center;
 text-decoration: none;
 width: 100%;
 }
+button[type="submit"]:hover{
+background-color: #001a33;
+transition: background-color 1s;
+}
 /*Style for medium screen*/
 
 @media screen and (min-width: 768px) {
@@ -179,6 +194,7 @@ flex-basis: 85%;
 }
 form{
 width: 97%;
+padding: 20px;
 }
 legend{
 margin-bottom: 20px;
@@ -194,6 +210,7 @@ flex-basis: 82%;
 }
 form{
   width: 70%;
+  padding: 20px;
 }
 .title-box {
 align-items: center;
@@ -280,10 +297,6 @@ flex-basis: 30%;
 overflow: auto;
 padding: 0 20px 0 20px;
 }
-form:hover{
-background-color:	rgb(230, 230, 230);
-transition: background-color 1s;
-}
 .title-box-2{
 border-bottom: thick double #003366;
 display: block;
@@ -301,9 +314,5 @@ display: none;
 }
 .title-box p{
 display: none;
-}
-button[type="submit"]:hover{
-background-color: #001a33;
-transition: background-color 1s;
 }
 }
